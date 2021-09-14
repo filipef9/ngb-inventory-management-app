@@ -16,3 +16,7 @@ vscode:
     - angular.ng-template
     - johnpapa.angular2
     - ms-vscode.vscode-typescript-tslint-plugin
+
+tasks:
+  - init: yarn install
+    command: yarn
