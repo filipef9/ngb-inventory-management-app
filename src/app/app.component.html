@@ -8,5 +8,11 @@
   </nav>
 </header>
 
-<main class="container m-3">
+<main class="container mt-5">
+  <div class="inventory-app">
+    <app-products-list
+      [productList]="products"
+      (productSelected)="onProductSelected($event)"
+    ></app-products-list>
+  </div>
 </main>
