@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-3">
+        <app-product-image [product]="product"></app-product-image>
+      </div>
+      <div class="col-7">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">SKU #{{ product.sku }}</h6>
+        <app-product-department [product]="product"></app-product-department>
+      </div>
+      <div class="col-2">
+        <app-price-display [price]="product.price"></app-price-display>
+      </div>
+    </div>
+  </div>
+</div>
