@@ -6,17 +6,12 @@ import { Product } from '../product.model';
   templateUrl: './product-row.component.html',
   styleUrls: ['./product-row.component.css']
 })
-export class ProductRowComponent implements OnInit {
+export class ProductRowComponent {
 
   @Input()
   product: Product;
 
-  @HostBinding('attr.class')
-  cssClass = 'item';
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input()
+  isSelected: boolean;
 
 }
